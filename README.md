@@ -1,4 +1,4 @@
-# CS193p-Developing-Apps-for-iOS
+# CS193p - Developing Apps for iOS
 ![Compatible with Swift 5.6][swift-version]
 ![Tested with Xcode 13.3][xcode-version]
 ![Tested with iOS 15.0][ios-version]
