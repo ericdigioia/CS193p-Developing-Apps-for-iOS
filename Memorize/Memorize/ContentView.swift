@@ -8,46 +8,85 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let emojiArray = ["🚗","🚕","🚙","🚌","🚎","🏎","🚓","🚑","🚒","🚐","🛻","🚚","🚛","🚜","🛴","🚲","🛵","🏍","🛺","🚅"]
-    @State private var numberOfCards = 4 {
-        didSet { if numberOfCards < 1 { numberOfCards = 1 } }
+    enum themes {
+        case vehicles, animals, fruit
+    }
+    
+    @State private var selectedTheme = themes.vehicles // theme defaults to vehicles at launch
+    
+    private let vehicleEmojis = ["🚗","🚕","🚙","🚌","🚎","🏎","🚓","🚑","🚒","🚐","🛻","🚚","🚛","🚜","🛴","🚲","🛵","🏍","🛺","🚅"]
+    private let animalEmojis = ["🐶","🐱","🐭","🐹","🐰","🦊","🐻","🐼","🐻‍❄️","🐨","🐯","🦁","🐮","🐷","🐸","🐵"]
+    private let foodEmojis = ["🍏","🍎","🍐","🍊","🍋","🍌","🍉","🍇","🍓","🫐","🍈","🍑","🥭","🍍","🥝","🍅 ","🍆","🥑"]
+    
+    private var emojiArray: [String] { // the emoji set corresponding to the currently selected theme
+        switch selectedTheme {
+        case .vehicles:
+            return vehicleEmojis.shuffled()
+        case .animals:
+            return animalEmojis.shuffled()
+        case .fruit:
+            return foodEmojis.shuffled()
+        }
+    }
+    
+    private var numberOfCards: Int { // Extra Credit 1: show random number of cards between 4 and theme max every time new theme appears
+        Int.random(in: 4...emojiArray.count)
     }
     
     var body: some View {
-        NavigationView {
-            VStack {
-                ScrollView {
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
-                        ForEach(emojiArray[0..<numberOfCards], id: \.self) { emoji in
-                            CardView(content: emoji)
-                                .aspectRatio(2/3, contentMode: .fit)
-                        }
+        VStack {
+            Text("Memorize!")
+                .font(.largeTitle)
+            
+            ScrollView { // card view area
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
+                    ForEach(emojiArray[0..<numberOfCards], id: \.self) { emoji in
+                        CardView(content: emoji)
+                            .aspectRatio(2/3, contentMode: .fit)
+                    }
+                }
+            }
+            
+            Spacer()
+            
+            HStack { // theme buttons area
+                Spacer()
+                
+                Button {
+                    selectedTheme = .vehicles
+                } label: {
+                    VStack {
+                        Image(systemName: "car").font(.title)
+                        Text("vehicles").font(.footnote)
                     }
                 }
                 
                 Spacer()
                 
-                HStack {
-                    Button() {
-                        numberOfCards -= 1
-                    } label: {
-                        Image(systemName: "minus.circle")
-                            .font(.largeTitle)
-                    }
-                    
-                    Spacer()
-                    
-                    Button() {
-                        numberOfCards += 1
-                    } label: {
-                        Image(systemName: "plus.circle")
-                            .font(.largeTitle)
+                Button {
+                    selectedTheme = .animals
+                } label: {
+                    VStack {
+                        Image(systemName: "pawprint").font(.title)
+                        Text("animals").font(.footnote)
                     }
                 }
+                
+                Spacer()
+                
+                Button {
+                    selectedTheme = .fruit
+                } label: {
+                    VStack {
+                        Image(systemName: "leaf").font(.title)
+                        Text("fruits").font(.footnote)
+                    }
+                }
+                
+                Spacer()
             }
-            .padding()
-            .navigationTitle("Memorize!")
         }
+        .padding(.horizontal)
     }
 }
 
@@ -59,7 +98,7 @@ struct CardView: View {
     
     var body: some View {
         ZStack {
-            if isFaceUp {
+            if isFaceUp { // front side
                 cardShape
                     .fill()
                     .foregroundColor(.white)
@@ -68,7 +107,7 @@ struct CardView: View {
                     .foregroundColor(.red)
                 Text(content)
                     .font(.largeTitle)
-            } else {
+            } else { // back side
                 cardShape
                     .fill()
                     .foregroundColor(.white)
@@ -84,5 +123,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .preferredColorScheme(.dark)
+        ContentView()
+            .preferredColorScheme(.light)
     }
 }
