@@ -54,9 +54,8 @@ class EmojiMemoryGame: ObservableObject {
                                contentSet: ["🚗","🚕","🚙","🚌","🚎","🏎","🚓","🚑","🚒","🚐","🛻","🚚","🚛","🚜","🛴","🚲","🛵","🏍","🛺","🚅"].shuffled(),
                                numberOfPairsOfCards: 50, // purposely overly-large number of pairs to demonstrate safety measures / self-correction (see Theme.swift)
                                color: "red"))
-        self.themes.append(Theme(name: "Animals",
+        self.themes.append(Theme(name: "Animals", // this theme is declared without specifying the number of pairs, so that number will default to use all emoji (see Theme.swift)
                                contentSet: ["🐶","🐱","🐭","🐹","🐰","🦊","🐻","🐼","🐻‍❄️","🐨","🐯","🦁","🐮","🐷","🐸","🐵"].shuffled(),
-                               numberOfPairsOfCards: 15,
                                color: "blue"))
         self.themes.append(Theme(name: "Fruits",
                                contentSet: ["🍏","🍎","🍐","🍊","🍋","🍌","🍉","🍇","🍓","🫐","🍈","🍑","🥭","🍍","🥝","🍅 ","🍆","🥑"].shuffled(),
