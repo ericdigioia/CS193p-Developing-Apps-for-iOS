@@ -11,6 +11,8 @@ My assignment solutions for Stanford's CS193p - Developing Apps for iOS course f
 
 This assignment focused on SwiftUI fundamentals and getting a working app.
 
+<img src="Assignment 1/preview.jpg" height="500">
+
 https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_1.pdf
 
 ### Assignment 2: Memorize
@@ -18,12 +20,17 @@ https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/ass
 This assignment focused on MVVM. The code from assignment 1 was further developed and adapted
 to MVVM architecture.
 
+<img src="Assignment 2/preview.jpg" height="500">
+
 https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/Assignment%202.pdf
 
 ### Assignment 3: Set
 
 This assignment was to make your own card game app from scratch following MVVM architecture.
-The card game to be programmed was SET.
+The card game to be programmed was SET. While the first two assignments built upon in-lecture
+demo code, this one was done from a blank slate.
+
+<img src="Assignment 3/preview.jpg" height="500">
 
 https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_3_0.pdf
 
