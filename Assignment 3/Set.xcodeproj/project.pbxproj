@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E951F768287679AE00857807 /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951F767287679AE00857807 /* Stripes.swift */; };
+		E951F76A2876B9C900857807 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951F7692876B9C900857807 /* AspectVGrid.swift */; };
 		E96BFA7A2873B3A3008E6270 /* SetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BFA792873B3A3008E6270 /* SetApp.swift */; };
 		E96BFA7C2873B3A3008E6270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BFA7B2873B3A3008E6270 /* ContentView.swift */; };
 		E96BFA7E2873B3A6008E6270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96BFA7D2873B3A6008E6270 /* Assets.xcassets */; };
@@ -16,11 +17,11 @@
 		E96BFA8A28751D1D008E6270 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BFA8928751D1D008E6270 /* ViewModel.swift */; };
 		E96BFA8C28751FA4008E6270 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BFA8B28751FA4008E6270 /* CardView.swift */; };
 		E96BFA8E28752F52008E6270 /* DiamondShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BFA8D28752F52008E6270 /* DiamondShape.swift */; };
-		E96BFA9328763CF5008E6270 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BFA9228763CF5008E6270 /* AspectVGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E951F767287679AE00857807 /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
+		E951F7692876B9C900857807 /* AspectVGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
 		E96BFA762873B3A3008E6270 /* Set.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Set.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96BFA792873B3A3008E6270 /* SetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetApp.swift; sourceTree = "<group>"; };
 		E96BFA7B2873B3A3008E6270 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		E96BFA8928751D1D008E6270 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		E96BFA8B28751FA4008E6270 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E96BFA8D28752F52008E6270 /* DiamondShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondShape.swift; sourceTree = "<group>"; };
-		E96BFA9228763CF5008E6270 /* AspectVGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AspectVGrid.swift; path = "../../../Lecture Code/Memorize/AspectVGrid.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +63,12 @@
 		E96BFA782873B3A3008E6270 /* Set */ = {
 			isa = PBXGroup;
 			children = (
+				E951F7692876B9C900857807 /* AspectVGrid.swift */,
 				E96BFA792873B3A3008E6270 /* SetApp.swift */,
 				E96BFA7B2873B3A3008E6270 /* ContentView.swift */,
 				E96BFA872874DDCB008E6270 /* Model.swift */,
 				E96BFA8928751D1D008E6270 /* ViewModel.swift */,
 				E96BFA8B28751FA4008E6270 /* CardView.swift */,
-				E96BFA9228763CF5008E6270 /* AspectVGrid.swift */,
 				E96BFA8D28752F52008E6270 /* DiamondShape.swift */,
 				E951F767287679AE00857807 /* Stripes.swift */,
 				E96BFA7D2873B3A6008E6270 /* Assets.xcassets */,
@@ -159,10 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E951F76A2876B9C900857807 /* AspectVGrid.swift in Sources */,
 				E96BFA8E28752F52008E6270 /* DiamondShape.swift in Sources */,
 				E96BFA882874DDCB008E6270 /* Model.swift in Sources */,
 				E951F768287679AE00857807 /* Stripes.swift in Sources */,
-				E96BFA9328763CF5008E6270 /* AspectVGrid.swift in Sources */,
 				E96BFA7C2873B3A3008E6270 /* ContentView.swift in Sources */,
 				E96BFA8A28751D1D008E6270 /* ViewModel.swift in Sources */,
 				E96BFA7A2873B3A3008E6270 /* SetApp.swift in Sources */,
