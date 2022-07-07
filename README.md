@@ -20,6 +20,13 @@ to MVVM architecture.
 
 https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/Assignment%202.pdf
 
+### Assignment 3: Set
+
+This assignment was to make your own card game app from scratch following MVVM architecture.
+The card game to be programmed was SET.
+
+https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_3_0.pdf
+
 ## Stanford University's CS193p - Developing Apps for iOS
 https://cs193p.sites.stanford.edu
 
