@@ -4,6 +4,7 @@
 ![Tested with iOS 15.0][ios-version]
 <br />
 ![Designed with SwiftUI][swiftui]
+![Conforms to MVVM architecture][mvvm]
 
 My assignment solutions for Stanford's CS193p - Developing Apps for iOS course for Spring 2021
 
@@ -43,3 +44,4 @@ https://cs193p.sites.stanford.edu
 [xcode-version]: https://img.shields.io/badge/Xcode-13.3-green.svg
 [ios-version]: https://img.shields.io/badge/iOS-15.0-green.svg
 [swiftui]: https://img.shields.io/badge/SwiftUI-%20-blue
+[mvvm]: https://img.shields.io/badge/MVVM-%20-lightgrey
