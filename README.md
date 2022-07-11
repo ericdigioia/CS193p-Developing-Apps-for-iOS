@@ -18,7 +18,7 @@ This assignment focused on SwiftUI fundamentals and getting a working app.
 
 https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_1.pdf
 
-### Assignment 2: Memorize
+### Assignment 2: Memorize (cont.)
 
 This assignment focused on MVVM. The code from assignment 1 was further developed and adapted
 to MVVM architecture.
