@@ -6,7 +6,8 @@
 ![Designed with SwiftUI][swiftui]
 ![Conforms to MVVM architecture][mvvm]
 
-My assignment solutions for Stanford's CS193p - Developing Apps for iOS course for Spring 2021
+My assignment solutions for Stanford's CS193p - Developing Apps for iOS course for Spring 2021 <br/>
+(It may take a minute to load all app previews inside the README)
 
 ## Assignments
 
