@@ -12,7 +12,7 @@ My assignment solutions for Stanford's CS193p - Developing Apps for iOS course f
 
 ### Assignment 1: Memorize
 
-<img align="left" src="Assignment 1/preview.jpg" height="600"><br/><br/><br/><br/><br/><br/><br/><br/>
+<img align="left" src="Assignment 1/preview.GIF" height="600"><br/><br/><br/><br/><br/><br/><br/><br/>
 This assignment focused on SwiftUI <br/>
 fundamentals and getting a working <br/>
 app.<br/><br/>
@@ -21,7 +21,7 @@ app.<br/><br/>
 
 ### Assignment 2: Memorize (cont.)
 
-<img align="left" src="Assignment 2/preview.jpg" height="600"><br/><br/><br/><br/><br/><br/><br/><br/>
+<img align="left" src="Assignment 2/preview.GIF" height="600"><br/><br/><br/><br/><br/><br/><br/><br/>
 This assignment focused on MVVM. <br/>
 The code from assignment 1 was <br/>
 further developed and adapted to <br/>
@@ -31,7 +31,7 @@ MVVM architecture.<br/><br/>
 
 ### Assignment 3: Set
 
-<img align="left" src="Assignment 3/preview.gif" height="600"><br/><br/><br/><br/><br/><br/>
+<img align="left" src="Assignment 3/preview.GIF" height="600"><br/><br/><br/><br/><br/><br/>
 This assignment was to make your own card <br/>
 game app from scratch following MVVM <br/>
 architecture.The card game to be programmed <br/>

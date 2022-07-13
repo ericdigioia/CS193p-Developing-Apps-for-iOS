@@ -67,7 +67,7 @@ class EmojiMemoryGame: ObservableObject {
                                  color: "orange"))
         self.themes.append(Theme(name: "Countries",
                                  contentSet: ["🇨🇦","🇧🇲","🇧🇷","🇯🇵","🇯🇲","🇮🇹","🇮🇳","🇲🇰","🇪🇸","🇹🇼","🇨🇭","🇸🇪","🇻🇳","🇬🇧","🇺🇸","🇰🇷","🇬🇪"].shuffled(),
-                                 numberOfPairsOfCards: 15,
+                                 numberOfPairsOfCards: 25,
                                  color: "gray"))
         self.themes.append(Theme(name: "Tech",
                                  contentSet: ["🖥","⌨️","📠","📺","📻","🎙","☎️","🎥","📡","💡","🧲","⚙️","🪜","🧨","🔭","💊","🪥"].shuffled(),
