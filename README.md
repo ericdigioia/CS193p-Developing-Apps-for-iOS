@@ -33,7 +33,10 @@ This assignment was to make your own card game app from scratch following MVVM a
 The card game to be programmed was SET. While the first two assignments built upon in-lecture
 demo code, this one was done from a blank slate.
 
-<img src="Assignment 3/preview.jpg" height="500">
+<p float="left">
+<img src="Assignment 3/preview.jpg" height="500" />
+<img src="Assignment 3/preview.gif" height="500" />
+</p>
 
 https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_3_0.pdf
 
