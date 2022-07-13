@@ -31,7 +31,7 @@ MVVM architecture.<br/><br/>
 
 ### Assignment 3: Set
 
-<img align="left" src="Assignment 3/preview.GIF" height="600"><br/><br/><br/><br/><br/><br/>
+<img align="left" src="Assignment 3/preview.gif" height="600"><br/><br/><br/><br/><br/><br/>
 This assignment was to make your own card <br/>
 game app from scratch following MVVM <br/>
 architecture.The card game to be programmed <br/>
