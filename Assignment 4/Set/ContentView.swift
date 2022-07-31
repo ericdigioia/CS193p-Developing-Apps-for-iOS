@@ -22,7 +22,7 @@ struct ContentView: View {
                             .matchedGeometryEffect(id: card.id, in: dealingNameSpace)
                             .padding(viewConstants.interCardPadding)
                             .transition(AnyTransition.asymmetric(insertion: .identity, removal: .scale))
-                            .zIndex(zIndex(of: card))
+                            //.zIndex(zIndex(of: card))
                             .onTapGesture {
                                 withAnimation {
                                     viewModel.choose(card)
@@ -79,13 +79,15 @@ struct ContentView: View {
             .aspectRatio(viewConstants.cardAspectRatio, contentMode: .fit)
             .onTapGesture {
                 if dealtCardIDs.isEmpty {
+                    // deal initial 12 cards
                     viewModel.dealInitialCards()
+                    updateDealtCards()
                 } else {
                     withAnimation {
                         viewModel.dealMoreCards()
+                        updateDealtCards()
                     }
                 }
-                updateDealtCards()
             }
         }
     }
@@ -108,19 +110,26 @@ struct ContentView: View {
     
     // updates the dealtCardIDs Set which determines where cards are shown on screen
     private func updateDealtCards(useAnimation: Bool = true) {
-        for card in viewModel.cards.filter({ $0.isInPlay }) {
-            if !dealtCardIDs.contains(card.id) {
-                if useAnimation { _ = withAnimation(dealAnimation(for: card)) { dealtCardIDs.insert(card.id) } }
-                else { dealtCardIDs.insert(card.id) }
+        // for all cards that are in play but not yet dealt on the screen (newly dealt cards)
+        for (index, card) in viewModel.cards.filter({ $0.isInPlay && !dealtCardIDs.contains($0.id)}).enumerated() {
+            if useAnimation {
+                _ = withAnimation(Animation.easeOut(duration: viewConstants.totalDealDuration).delay(Double(index)/7)) {
+                    dealtCardIDs.insert(card.id)
+                }
             }
+            else { dealtCardIDs.insert(card.id) }
         }
     }
     
     // returns animation to use for dealing cards one at a time
     private func dealAnimation(for card: ViewModel.Card) -> Animation {
-        if let indexOfCard = viewModel.cards.firstIndex(where: { $0.id == card.id }) {
-            return Animation.easeInOut(duration: viewConstants.totalDealDuration).delay(Double(indexOfCard) * viewConstants.totalDealDuration / Double(viewModel.cards.count))
+        
+        if let indexOfCard = viewModel.cards.filter({ $0.isInPlay && !dealtCardIDs.contains($0.id) }).firstIndex(where: { $0.id == card.id }) {
+            let delay = Double(indexOfCard) * viewConstants.totalDealDuration / Double(viewModel.cards.count)
+            print("delay: \(delay)")
+            return Animation.easeInOut(duration: viewConstants.totalDealDuration).delay(delay)
         } else {
+            print("no delay")
             return Animation.easeInOut(duration: viewConstants.totalDealDuration).delay(0)
         }
     }

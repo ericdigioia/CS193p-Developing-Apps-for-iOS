@@ -42,4 +42,9 @@ class ViewModel: ObservableObject {
         model.dealInitialCards()
     }
     
+    // deals one card
+    func dealCard() {
+        model.dealCard()
+    }
+    
 }

@@ -76,6 +76,12 @@ struct Model {
         for i in 0..<12 { cards[i].isInPlay = true }
     }
     
+    // deals 1 card
+    mutating func dealCard() {
+        let cardsStillInDeck = cards.filter({ !$0.isInPlay && !$0.isMatched }) // card is in deck if it is not in play and also not matched already
+        cards[cards.firstIndex(where: { $0.id == cardsStillInDeck[0].id })!].isInPlay = true
+    }
+    
     // returns TRUE if currently chosen cards make a valid set
     private func checkIfSet(for potentialSet: [Card]) -> Bool {
         // make sure potential set contains only three cards
