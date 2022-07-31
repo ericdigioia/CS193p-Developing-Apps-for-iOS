@@ -42,6 +42,15 @@ was done from a blank slate.<br/><br/>
 [assignment page](https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_3_0.pdf)
 <br clear="left"/><br/><br/>
 
+### Assignment 4: Set
+
+<img align="left" src="Assignment 4/preview.GIF" height="600"><br/><br/><br/><br/><br/><br/>
+This assignment builds off of assignment 3's <br/>
+code. Most of the changes were UI changes <br/>
+with animations.<br/><br/>
+[assignment page](https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_4_0.pdf)
+<br clear="left"/><br/><br/>
+
 ## Stanford University's CS193p - Developing Apps for iOS
 https://cs193p.sites.stanford.edu
 
